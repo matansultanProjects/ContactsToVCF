@@ -22,7 +22,7 @@ async function convertToVCF() {
 
                 if (status && status.trim() === "לומד") {
                     if (studentPhone) {
-                        vcfContent += `BEGIN:VCARD\nVERSION:3.0\nFN:${studentName} ${classNumber} פייתון\nTEL;TYPE=CELL:${studentPhone}\nEND:VCARD\n`;
+                        vcfContent += `BEGIN:VCARD\nVERSION:3.0\nFN:${studentName} ${classNumber}\nTEL;TYPE=CELL:${studentPhone}\nEND:VCARD\n`;
                     }
                     if (parentPhone) {
                         vcfContent += `BEGIN:VCARD\nVERSION:3.0\nFN:הורה של ${studentName} מקבוצה ${classNumber}\nTEL;TYPE=CELL:${parentPhone}\nEND:VCARD\n`;
