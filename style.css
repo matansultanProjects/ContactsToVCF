@@ -118,7 +118,7 @@ body::before {
     width: 200%;
     height: 200%;
     background: radial-gradient(circle, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 100%);
-    animation: gradientMove 15s ease infinite;
+    /* animation: gradientMove 15s ease infinite; */
 }
 /* 
 @keyframes gradientMove {
