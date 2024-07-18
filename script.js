@@ -1,4 +1,5 @@
-const API_KEY = 'AIzaSyCMK7424Okm_fN04bZbDK4eL-mn9IDYZrI';
+// 
+
 
 async function convertToVCF() {
     const sheetUrl = document.getElementById('sheetUrl').value;
@@ -38,6 +39,9 @@ async function convertToVCF() {
                 downloadLink.href = url;
                 downloadLink.download = `class_${classNumber}.vcf`;
                 downloadLink.style.display = 'block';
+
+                // Animation for download link
+                downloadLink.classList.add('animate__animated', 'animate__pulse');
             } else {
                 alert('לא נמצאו נתונים ליצירה קובץ VCF');
             }
